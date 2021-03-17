@@ -1,2 +1,2 @@
 # Technocolabs_Machine_Learning_Reddit
-https://technocolabs-machine-learning.herokuapp.com/predict
+https://technocolabs-machine-learning.herokuapp.com/
