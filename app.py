@@ -31,7 +31,7 @@ def get_data(url):
     data = {}
     reddit = praw.Reddit(client_id='4iavd3DtyOMmyg',
                    client_secret='aPzAU3cr9yVMPIqVtfWVKwseGdQCQg', 
-                   user_agent='anshul ')
+                   user_agent='anshul')
 
     sub_data = reddit.submission(url=str(url))
     
