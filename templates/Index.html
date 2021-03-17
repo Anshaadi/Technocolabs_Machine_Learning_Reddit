@@ -1,0 +1,84 @@
+<html>
+<title>Predicting Score for Reddit post </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.jumbotron {
+		background-image: url("https://images-na.ssl-images-amazon.com/images/I/31qu4ixHZ3L._SY355_.jpg");
+		background-size:cover;
+    color: #fff;
+    padding: 90px 25px;
+}
+
+.container-fluid {
+    padding: 10px 300px;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #000000;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 5 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000     !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.boxed {
+	background: grey;
+	width: fit-content;
+	padding: 15px 30px;
+	border-radius: 10px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(22, 22, 22);
+   color: white;
+   text-align: center;
+}
+.bg-grey {
+    background-color: #f1f1f1;
+}
+</style>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>Predicting the Popularity of Reddit Posts</h1>
+  </div>
+
+<div class="container-fluid">
+  <h5>Enter the URL</h5>
+
+  <form action="/predict" method="post">
+
+		<div class="form-group">
+    <input type="text" class="form-control" id="url" name="url">
+  	</div>
+
+  	<center><button type="submit" class="btn btn-primary">submit</button></center>
+	</form>
+  
+
+  <center><h4 style="color:rgb(126, 18, 18); font-size: 20px; "> {{ results }} </h4></center>
+	
+</div>
+<br><br>
+	<div class="footer">
+  <p>Made by Anshul Shrivastava for Technocolabs</p>
+</div>
+</body>
+</html>
